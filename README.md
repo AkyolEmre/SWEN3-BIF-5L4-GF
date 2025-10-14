@@ -1,10 +1,8 @@
 # Document Management System
 
-@Author: Akyol Emre & Chauhan Harmanpreet
-
 ## Project Overview
 
-This is a Document Management System (DMS) for archiving documents in a FileStore. It includes features like automatic OCR (via a queue), automatic summary generation using Gen-AI, tagging, and full-text search with ElasticSearch. The project is built using C# in Visual Studio 2022, following a sprint-based development approach.
+This is a Document Management System (DMS) for archiving documents in a FileStore. It includes features like automatic OCR (via a queue), automatic summary generation using Gen-AI, tagging, and full-text search with ElasticSearch. The project is built using C# in Visual Studio, following a sprint-based development approach.
 
 The system uses a layered architecture:
 - **DMS.Domain**: Core entities and business models.
@@ -51,14 +49,14 @@ DocumentManagementSystem/
 ```
 
 ### Prerequisites
-- Visual Studio 2022 with .NET 8.0 SDK.
+- Visual Studio with .NET 8.0 SDK.
 - Docker Desktop installed and running.
 - Git installed.
 
 ### Setup Instructions
 1. **Clone the Repository**:
    ```
-   git clone https://github.com/yourusername/Document-Management-System.git
+   git clone https://github.com/AkyolEmre/SWEN3-BIF-5L4-GF.git
    ```
    Open the solution (`DocumentManagementSystem.sln`) in Visual Studio.
 
@@ -115,6 +113,4 @@ Example POST body:
 - Later: Gen-AI summaries, tagging, ElasticSearch full-text search.
 
 ### Contributors
-- Team Members: [List names or GitHub usernames]
-
-For issues, create a GitHub issue. Pull requests welcome!
+- Team Members: Akyol Emre & Chauhan Harmanpreet
