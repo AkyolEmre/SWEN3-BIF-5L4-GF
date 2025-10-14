@@ -72,11 +72,6 @@ DocumentManagementSystem/
      ```
      Note: For Docker, migrations are applied automatically or manually via container.
 
-4. **Run Locally**:
-   - Set DMS.API as startup project.
-   - Run (F5). API available at `https://localhost:port` (check launchSettings.json).
-   - Use Swagger at `/swagger` for testing endpoints.
-
 5. **Run with Docker**:
    - From the solution root, run:
      ```
