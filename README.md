@@ -102,10 +102,50 @@ Example POST body:
 - Open Test Explorer (View > Test Explorer).
 - Build the solution.
 - Run All Tests. All should pass (covers repository CRUD with InMemory mocking).
+- 
 
-### Future Sprints
-- Sprint 2: FileStore integration, OCR queue.
-- Later: Gen-AI summaries, tagging, ElasticSearch full-text search.
+# Sprint 2: Implement (Web-)UI with Webserver
+
+## Sprint-Ziel
+In diesem Sprint wurde eine einfache Web-UI implementiert, die über einen Nginx-Webserver in einem separaten Docker-Container serviert wird. Die UI kommuniziert mit dem REST-API-Backend aus Sprint 1 (z. B. zum Hochladen von Dokumenten). Als Basis wurde eine statische HTML-Seite verwendet, die eine Upload-Funktion bietet. Die UI ist minimalistisch und verwendet Bootstrap für das Styling. Der Fokus lag auf der Integration in Docker und der Proxy-Konfiguration via Nginx, um API-Aufrufe weiterzuleiten.
+
+## Wichtige Änderungen am Projekt
+- **Neue Dateien/Ordner**:
+  - `index.html`: Eine statische HTML-Seite für die UI (Upload-Formular, das an `/api/Documents/Upload` postet).
+  - `nginx.conf`: Konfigurationsdatei für Nginx (serviert statische Dateien und proxyt API-Anfragen).
+  - `ui-static/` (oder ähnlicher Ordner): Ordner für statische UI-Dateien (z. B. index.html), der als Volume in Docker gemountet wird.
+- **Updates an bestehenden Dateien**:
+  - `docker-compose.yml`: Neuer Service `frontend` hinzugefügt (basierend auf `nginx:alpine`), mit Volumes für UI-Dateien und Nginx-Config. Ports: 80:80. Depends on `api`.
+  - `DMS.API/Controllers/DocumentsController.cs`: Neuer Endpoint `[HttpPost("Upload")]` für Datei-Uploads hinzugefügt, der Dateien in die DB speichert.
+- **Projektstruktur-Erweiterung** (in GitHub):
+  ```
+  DocumentManagementSystem/
+  ├── ui-static/                # Statische UI-Dateien (z. B. index.html)
+  ├── nginx.conf                # Nginx-Konfiguration
+  ├── docker-compose.yml        # Erweitert um frontend-Service
+  ... (bestehende Ordner aus Sprint 1)
+  ```
+
+## Voraussetzungen
+- Visual Studio 2022 mit .NET 8.0.
+- Docker Desktop installiert und laufend.
+- PostgreSQL-Container aus Sprint 1 (via docker-compose).
+
+## Ausführung und Deployment
+1. Baue und starte die Container:
+   ```
+   docker-compose build
+   docker-compose up -d
+   ```
+2. Zugriff auf die UI: Öffne im Browser `http://localhost` (Port 80).
+3. Testen:
+   - Lade eine Datei hoch – sie sollte im Backend (DB) gespeichert werden.
+   - Überprüfe Logs: `docker-compose logs frontend`.
+4. Stoppen: `docker-compose down`.
+
+## UI Übersicht
+Die UI ist eine einfache statische Seite mit einem Upload-Formular (Dateiauswahl und "Hochladen"-Button). Sie sieht so aus:  
+![UI Screenshot](img/übersicht.png)
 
 ### Contributors
 - Team Members: Akyol Emre & Chauhan Harmanpreet
