@@ -1,49 +1,55 @@
-using Microsoft.EntityFrameworkCore;
-using DMS.DAL;
-using DMS.DAL.Repositories;
+﻿// Program.cs – gesamte Datei
+using DMS.API.Services; // IMessageProducer, MessageProducer
+using DMS.DAL.Repositories; // IDocumentRepository, DocumentRepository
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection; // Explizit für AddScoped (hilft beim Resolver)
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// 1. Konfiguration einlesen (wird implizit gemacht, aber hier explizit gezeigt)
+IConfiguration cfg = builder.Configuration;
 
-// Add DbContext with PostgreSQL
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+// 2. Services registrieren
+builder.Services.AddControllers(); // API-Controller
+builder.Services.AddEndpointsApiExplorer(); // für Swagger
+builder.Services.AddSwaggerGen(); // Swagger / OpenAPI
 
-// Add Repository
+// 3. RabbitMQ ConnectionFactory
+builder.Services.AddSingleton<IConnectionFactory>(sp =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    return new ConnectionFactory
+    {
+        HostName = config["RabbitMQ:HostName"],
+        UserName = config["RabbitMQ:UserName"],
+        Password = config["RabbitMQ:Password"],
+        Port = config.GetValue<int>("RabbitMQ:Port", 5672),
+        VirtualHost = config["RabbitMQ:VirtualHost"] ?? "/"
+    };
+});
+
+// 4. Eigener Message-Producer (mit Workaround: vollqualifizierte Namen, falls Resolver hakt)
+builder.Services.AddScoped<DMS.API.Services.IMessageProducer, DMS.API.Services.MessageProducer>();
+
+// 5. Repositories (Beispiel EF-Core)
 builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
 
-// Define CORS policy
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowFrontend", policy =>
-    {
-        policy.WithOrigins("http://localhost", "http://localhost:80", "http://localhost:4200") // Add prod URL later
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
-});
+// 6. DBContext (falls du EF nutzt)
+// builder.Services.AddDbContext<DmsDbContext>(opt =>
+//     opt.UseSqlServer(cfg.GetConnectionString("Default")));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 7. HTTP-Pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DMS.API v1"));
 }
 
-// Use CORS before other middleware
-app.UseCors("AllowFrontend");
-
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
-app.MapControllers();
+app.MapControllers(); // alle Controller-Routen registrieren
 
 app.Run();

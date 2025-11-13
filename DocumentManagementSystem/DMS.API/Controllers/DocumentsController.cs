@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using DMS.API.Services;
 using DMS.DAL.Repositories;
 using DMS.Domain.Entities;
-using System.Collections.Generic;
-using System.Linq;
+using System;
+using System.IO;
 using System.Threading.Tasks;
+using DMS.Common.Exceptions;
 
 namespace DMS.API.Controllers
 {
@@ -11,89 +14,57 @@ namespace DMS.API.Controllers
     [ApiController]
     public class DocumentsController : ControllerBase
     {
-        private readonly IDocumentRepository _repository;
+        private readonly IDocumentRepository _repo;
+        private readonly IMessageProducer _messageProducer;
+        private readonly ILogger<DocumentsController> _logger;
 
-        public DocumentsController(IDocumentRepository repository)
+        public DocumentsController(IDocumentRepository repo, IMessageProducer messageProducer, ILogger<DocumentsController> logger)
         {
-            _repository = repository;
+            _repo = repo;
+            _messageProducer = messageProducer;
+            _logger = logger;
         }
 
-        [HttpGet]
-        public async Task<ActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int page_size = 25, [FromQuery] string? query = null)
-        {
-            var allDocs = await _repository.GetAllAsync();
-
-            if (!string.IsNullOrEmpty(query))
-            {
-                allDocs = allDocs.Where(d => d.FileName.Contains(query, StringComparison.OrdinalIgnoreCase)).ToList();
-            }
-
-            var count = allDocs.Count();
-            var results = allDocs.Skip((page - 1) * page_size).Take(page_size).ToList();
-
-            var nextUrl = (page * page_size < count) ? $"?page={page + 1}&page_size={page_size}" : null;
-            var previousUrl = (page > 1) ? $"?page={page - 1}&page_size={page_size}" : null;
-
-            return Ok(new
-            {
-                count,
-                next = nextUrl,
-                previous = previousUrl,
-                results
-            });
-        }
-
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<Document>> GetById(int id)
         {
-            var doc = await _repository.GetByIdAsync(id);
-            if (doc == null) return NotFound();
-            return Ok(doc);
+            var doc = await _repo.GetByIdAsync(id);
+            return doc is null ? NotFound() : Ok(doc);
         }
 
         [HttpPost]
-        public async Task<ActionResult> PostDocument(IFormFile? document = null, [FromForm] string? title = null, [FromForm] DateTime? created = null)
+        public async Task<ActionResult> PostDocument(IFormFile? document = null, [FromForm] string? title = null)
         {
-            if (document == null) return BadRequest("No document provided.");
+            if (document is null || document.Length == 0)
+                return BadRequest("No file uploaded.");
 
-            using var memoryStream = new MemoryStream();
-            await document.CopyToAsync(memoryStream);
+            await using var ms = new MemoryStream();
+            await document.CopyToAsync(ms);
 
-            var newDoc = new Document
+            var doc = new Document
             {
                 FileName = title ?? document.FileName,
                 ContentType = document.ContentType,
-                Data = memoryStream.ToArray(),
-                UploadedAt = created ?? DateTime.UtcNow
+                Data = ms.ToArray(),
+                UploadedAt = DateTime.UtcNow,
+                Status = DocumentStatus.PendingOcr
             };
 
-            await _repository.AddAsync(newDoc);
+            await _repo.AddAsync(doc);
+            _logger.LogInformation("Document {DocumentId} saved.", doc.Id);
 
-            var taskId = Guid.NewGuid().ToString();
-            return CreatedAtAction(nameof(GetById), new { id = newDoc.Id }, new { task_id = taskId, id = newDoc.Id });
-        }
+            try
+            {
+                await _messageProducer.SendMessageAsync(doc.Id.ToString());
+                _logger.LogInformation("Published OCR job {DocumentId}", doc.Id);
+            }
+            catch (QueueException ex)
+            {
+                _logger.LogError(ex, "Queue publish failed for {DocumentId}", doc.Id);
+                return StatusCode(503, "OCR queue unavailable");
+            }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, [FromBody] Document document)
-        {
-            if (id != document.Id) return BadRequest();
-            await _repository.UpdateAsync(document);
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
-        {
-            await _repository.DeleteAsync(id);
-            return NoContent();
-        }
-
-        // Placeholder for bulk_edit (implement in later sprint if needed)
-        [HttpPost("bulk_edit")]
-        public ActionResult BulkEdit([FromBody] object payload)
-        {
-            // TODO: Implement bulk operations
-            return Ok();
+            return CreatedAtAction(nameof(GetById), new { id = doc.Id }, new { id = doc.Id, status = doc.Status });
         }
     }
 }
