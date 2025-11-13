@@ -5,16 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DMS.Domain.Entities;
+using DMS.DAL.Exceptions;
+using DMS.Domain.Exceptions;
+using Microsoft.Extensions.Logging;
 
 namespace DMS.DAL.Repositories
 {
     public class DocumentRepository : IDocumentRepository
     {
         private readonly ApplicationDbContext _context;
+        private readonly ILogger<DocumentRepository> _logger;
 
-        public DocumentRepository(ApplicationDbContext context)
+        public DocumentRepository(ApplicationDbContext context, ILogger<DocumentRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<Document> GetByIdAsync(int id)
@@ -26,11 +31,24 @@ namespace DMS.DAL.Repositories
         {
             return await _context.Documents.ToListAsync();
         }
-
         public async Task AddAsync(Document document)
         {
-            await _context.Documents.AddAsync(document);
-            await _context.SaveChangesAsync();
+            try
+            {
+                if (document == null) throw new DomainException("Document cannot be null");  // Beispiel für Domain-Check (könnte in Domain-Layer sein)
+                await _context.Documents.AddAsync(document);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                // Low-level DB-Fehler fangen und in DalException umwandeln
+                throw new DalException("Failed to save document to database", ex);
+            }
+            catch (Exception ex)
+            {
+                // Allgemeiner Fallback
+                throw new DalException("Unexpected error during add operation", ex);
+            }
         }
 
         public async Task UpdateAsync(Document document)
