@@ -1,15 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.API", "DMS.API\DMS.API.csproj", "{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F} = {73B06C31-984C-45E2-A67D-5601A8CE8B8F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.Tests", "DMS.Tests\DMS.Tests.csproj", "{681CBCB5-04D7-444D-92BF-B52670CBAE74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.Domain", "DMS.Domain\DMS.Domain.csproj", "{9D0F4DFA-F544-4246-8ED4-6538A23F3037}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.DAL", "DMS.DAL\DMS.DAL.csproj", "{A2D4DE2F-731A-456F-8FFE-DC4A642D3920}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F} = {73B06C31-984C-45E2-A67D-5601A8CE8B8F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.OCRWorker", "DMS.OCRWorker\DMS.OCRWorker.csproj", "{D8A725A1-B6B0-4510-98BC-1EA508BF1755}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F} = {73B06C31-984C-45E2-A67D-5601A8CE8B8F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.Common", "DMS.Common\DMS.Common.csproj", "{73B06C31-984C-45E2-A67D-5601A8CE8B8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +46,14 @@ Global
 		{A2D4DE2F-731A-456F-8FFE-DC4A642D3920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2D4DE2F-731A-456F-8FFE-DC4A642D3920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2D4DE2F-731A-456F-8FFE-DC4A642D3920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A725A1-B6B0-4510-98BC-1EA508BF1755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A725A1-B6B0-4510-98BC-1EA508BF1755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A725A1-B6B0-4510-98BC-1EA508BF1755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A725A1-B6B0-4510-98BC-1EA508BF1755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B06C31-984C-45E2-A67D-5601A8CE8B8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
