@@ -713,6 +713,17 @@ progress {
   height: auto;
 }
 
+.upload-zone {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.upload-zone:hover {
+  background-color: var(--bs-primary-subtle) !important;
+  border-color: var(--bs-primary) !important;
+}
+.cursor-pointer { cursor: pointer; }
+.border-dashed { border-style: dashed !important; }
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: var(--bs-body-bg);
