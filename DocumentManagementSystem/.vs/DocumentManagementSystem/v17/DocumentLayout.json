@@ -3,20 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\dms.ocrworker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\dms.ocrworker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\ocrworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\ocrworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\runtimeconfig.template.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\runtimeconfig.template.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\services\\messageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\services\\messageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\services\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\services\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\services\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\services\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\services\\iminioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\services\\iminioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\dms.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\dms.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\ocrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\ocrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|solutionrelative:dms.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.domain\\entities\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|solutionrelative:dms.domain\\entities\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.domain\\entities\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|solutionrelative:dms.domain\\entities\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\ocrmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\ocrmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.ocrworker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D8A725A1-B6B0-4510-98BC-1EA508BF1755}|DMS.OCRWorker\\DMS.OCRWorker.csproj|solutionrelative:dms.ocrworker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2D4DE2F-731A-456F-8FFE-DC4A642D3920}|DMS.DAL\\DMS.DAL.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.dal\\repositories\\idocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,28 +91,12 @@
       "RelativeMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|solutionrelative:dms.domain\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.domain\\entities\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|solutionrelative:dms.domain\\entities\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.domain\\entities\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0F4DFA-F544-4246-8ED4-6538A23F3037}|DMS.Domain\\DMS.Domain.csproj|solutionrelative:dms.domain\\entities\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\controllers\\correspondentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\controllers\\correspondentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\services\\messageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\services\\messageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47ADDB22-0F0C-4D53-AC03-E8CF712877D3}|DMS.API\\DMS.API.csproj|solutionrelative:dms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73B06C31-984C-45E2-A67D-5601A8CE8B8F}|DMS.Common\\DMS.Common.csproj|c:\\users\\yunus\\desktop\\technikum\\ws2526\\swen\\documentmanagementsystem\\dms.common\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,159 +113,206 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 17,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 27,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OcrWorker.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrWorker.cs",
-              "RelativeDocumentMoniker": "DMS.OCRWorker\\OcrWorker.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrWorker.cs",
-              "RelativeToolTip": "DMS.OCRWorker\\OcrWorker.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "OcrService.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrService.cs",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\OcrService.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrService.cs",
+              "RelativeToolTip": "DMS.OCRWorker\\OcrService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAMwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:57:21.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T15:26:51.24Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IDocumentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\IDocumentRepository.cs",
-              "RelativeDocumentMoniker": "DMS.DAL\\Repositories\\IDocumentRepository.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\IDocumentRepository.cs",
-              "RelativeToolTip": "DMS.DAL\\Repositories\\IDocumentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:54:55.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DocumentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\DocumentRepository.cs",
-              "RelativeDocumentMoniker": "DMS.DAL\\Repositories\\DocumentRepository.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\DocumentRepository.cs",
-              "RelativeToolTip": "DMS.DAL\\Repositories\\DocumentRepository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:44:55.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "DocumentsController.cs",
               "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\DocumentsController.cs",
               "RelativeDocumentMoniker": "DMS.API\\Controllers\\DocumentsController.cs",
               "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\DocumentsController.cs",
               "RelativeToolTip": "DMS.API\\Controllers\\DocumentsController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAIwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:42:58.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:42:58.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Program.cs",
-              "RelativeDocumentMoniker": "DMS.OCRWorker\\Program.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Program.cs",
-              "RelativeToolTip": "DMS.OCRWorker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:36:14.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Dockerfile",
-              "RelativeDocumentMoniker": "DMS.OCRWorker\\Dockerfile",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Dockerfile",
-              "RelativeToolTip": "DMS.OCRWorker\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-18T15:30:16.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DomainException.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Exceptions\\DomainException.cs",
-              "RelativeDocumentMoniker": "DMS.Domain\\Exceptions\\DomainException.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Exceptions\\DomainException.cs",
-              "RelativeToolTip": "DMS.Domain\\Exceptions\\DomainException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:54:02.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "DMS.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "DMS.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:45:31.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CorrespondentsController.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\CorrespondentsController.cs",
-              "RelativeDocumentMoniker": "DMS.API\\Controllers\\CorrespondentsController.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\CorrespondentsController.cs",
-              "RelativeToolTip": "DMS.API\\Controllers\\CorrespondentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:45:29.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "MessageProducer.cs",
               "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\MessageProducer.cs",
               "RelativeDocumentMoniker": "DMS.API\\Services\\MessageProducer.cs",
               "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\MessageProducer.cs",
               "RelativeToolTip": "DMS.API\\Services\\MessageProducer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:43:12.58Z",
+              "WhenOpened": "2025-11-18T15:43:12.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OcrWorker.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrWorker.cs",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\OcrWorker.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrWorker.cs",
+              "RelativeToolTip": "DMS.OCRWorker\\OcrWorker.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwEsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:57:21.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DMS.OCRWorker.csproj",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\DMS.OCRWorker.csproj",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\DMS.OCRWorker.csproj",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\DMS.OCRWorker.csproj",
+              "RelativeToolTip": "DMS.OCRWorker\\DMS.OCRWorker.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T15:23:54.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "runtimeconfig.template.json",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\runtimeconfig.template.json",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\runtimeconfig.template.json",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\runtimeconfig.template.json",
+              "RelativeToolTip": "DMS.OCRWorker\\runtimeconfig.template.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-27T22:21:49.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Program.cs",
+              "RelativeDocumentMoniker": "DMS.API\\Program.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Program.cs",
+              "RelativeToolTip": "DMS.API\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAuwDQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:36:17.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\appsettings.Development.json",
+              "RelativeToolTip": "DMS.OCRWorker\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-27T22:21:30.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMessageProducer.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\IMessageProducer.cs",
+              "RelativeDocumentMoniker": "DMS.API\\Services\\IMessageProducer.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\IMessageProducer.cs",
+              "RelativeToolTip": "DMS.API\\Services\\IMessageProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T15:55:35.992Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "MinIOService.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\MinIOService.cs",
+              "RelativeDocumentMoniker": "DMS.API\\Services\\MinIOService.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\MinIOService.cs",
+              "RelativeToolTip": "DMS.API\\Services\\MinIOService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:48:27.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DMS.API.csproj",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\DMS.API.csproj",
+              "RelativeDocumentMoniker": "DMS.API\\DMS.API.csproj",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\DMS.API.csproj",
+              "RelativeToolTip": "DMS.API\\DMS.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-26T14:03:23.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IMinIOService.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\IMinIOService.cs",
+              "RelativeDocumentMoniker": "DMS.API\\Services\\IMinIOService.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Services\\IMinIOService.cs",
+              "RelativeToolTip": "DMS.API\\Services\\IMinIOService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:05:26.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Program.cs",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\Program.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Program.cs",
+              "RelativeToolTip": "DMS.OCRWorker\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:36:14.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "DMS.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Class1.cs",
+              "RelativeToolTip": "DMS.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T15:38:38.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Document.cs",
               "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Entities\\Document.cs",
               "RelativeDocumentMoniker": "DMS.Domain\\Entities\\Document.cs",
               "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Entities\\Document.cs",
               "RelativeToolTip": "DMS.Domain\\Entities\\Document.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:33:46.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:33:46.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
+              "Title": "MinIOService.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\MinIOService.cs",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\MinIOService.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\MinIOService.cs",
+              "RelativeToolTip": "DMS.OCRWorker\\MinIOService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T15:24:39.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "DocumentStatus.cs",
               "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Entities\\DocumentStatus.cs",
               "RelativeDocumentMoniker": "DMS.Domain\\Entities\\DocumentStatus.cs",
@@ -229,25 +320,95 @@
               "RelativeToolTip": "DMS.Domain\\Entities\\DocumentStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:34:11.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:34:11.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Program.cs",
-              "RelativeDocumentMoniker": "DMS.API\\Program.cs",
-              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Program.cs",
-              "RelativeToolTip": "DMS.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "OcrMessage.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrMessage.cs",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\OcrMessage.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\OcrMessage.cs",
+              "RelativeToolTip": "DMS.OCRWorker\\OcrMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:36:17.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T15:24:02.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
+              "Title": "IDocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\IDocumentRepository.cs",
+              "RelativeDocumentMoniker": "DMS.DAL\\Repositories\\IDocumentRepository.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\IDocumentRepository.cs",
+              "RelativeToolTip": "DMS.DAL\\Repositories\\IDocumentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:54:55.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\DocumentRepository.cs",
+              "RelativeDocumentMoniker": "DMS.DAL\\Repositories\\DocumentRepository.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.DAL\\Repositories\\DocumentRepository.cs",
+              "RelativeToolTip": "DMS.DAL\\Repositories\\DocumentRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:44:55.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Dockerfile",
+              "RelativeDocumentMoniker": "DMS.OCRWorker\\Dockerfile",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.OCRWorker\\Dockerfile",
+              "RelativeToolTip": "DMS.OCRWorker\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-18T15:30:16.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DomainException.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Exceptions\\DomainException.cs",
+              "RelativeDocumentMoniker": "DMS.Domain\\Exceptions\\DomainException.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Domain\\Exceptions\\DomainException.cs",
+              "RelativeToolTip": "DMS.Domain\\Exceptions\\DomainException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:54:02.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "DMS.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "DMS.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:45:31.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CorrespondentsController.cs",
+              "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\CorrespondentsController.cs",
+              "RelativeDocumentMoniker": "DMS.API\\Controllers\\CorrespondentsController.cs",
+              "ToolTip": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.API\\Controllers\\CorrespondentsController.cs",
+              "RelativeToolTip": "DMS.API\\Controllers\\CorrespondentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:45:29.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Common\\Program.cs",
               "RelativeDocumentMoniker": "DMS.Common\\Program.cs",
@@ -255,12 +416,11 @@
               "RelativeToolTip": "DMS.Common\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:29:21.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:29:21.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "QueueException.cs",
               "DocumentMoniker": "C:\\Users\\yunus\\Desktop\\Technikum\\WS2526\\Swen\\DocumentManagementSystem\\DMS.Common\\Exceptions\\QueueException.cs",
               "RelativeDocumentMoniker": "DMS.Common\\Exceptions\\QueueException.cs",
@@ -268,8 +428,25 @@
               "RelativeToolTip": "DMS.Common\\Exceptions\\QueueException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:29:05.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:29:05.255Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 9,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }
