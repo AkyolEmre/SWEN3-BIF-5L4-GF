@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DMS.API.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using DMS.API.Services;
 using DMS.DAL.Repositories;
 using DMS.Domain.Entities;
 using System;
@@ -17,12 +17,18 @@ namespace DMS.API.Controllers
         private readonly IDocumentRepository _repo;
         private readonly IMessageProducer _messageProducer;
         private readonly ILogger<DocumentsController> _logger;
+        private readonly IMinIOService _minioService;
 
-        public DocumentsController(IDocumentRepository repo, IMessageProducer messageProducer, ILogger<DocumentsController> logger)
+        public DocumentsController(
+            IDocumentRepository repo,
+            IMessageProducer messageProducer,
+            ILogger<DocumentsController> logger,
+            IMinIOService minioService)
         {
             _repo = repo;
             _messageProducer = messageProducer;
             _logger = logger;
+            _minioService = minioService;
         }
 
         [HttpGet("{id:int}")]
@@ -32,39 +38,38 @@ namespace DMS.API.Controllers
             return doc is null ? NotFound() : Ok(doc);
         }
 
-        [HttpPost]
-        public async Task<ActionResult> PostDocument(IFormFile? document = null, [FromForm] string? title = null)
+        // SPRINT 4 UPLOAD
+        [HttpPost("upload")]
+        public async Task<ActionResult> Upload(IFormFile file)
         {
-            if (document is null || document.Length == 0)
+            if (file == null || file.Length == 0)
                 return BadRequest("No file uploaded.");
 
-            await using var ms = new MemoryStream();
-            await document.CopyToAsync(ms);
+            // 1. MinIO Upload
+            await using var stream = file.OpenReadStream();
+            var objectName = await _minioService.UploadFileAsync(stream, file.FileName, file.ContentType);
 
-            var doc = new Document
+            // 2. DB Eintrag
+            var document = new Document
             {
-                FileName = title ?? document.FileName,
-                ContentType = document.ContentType,
-                Data = ms.ToArray(),
+                FileName = file.FileName,
+                ContentType = file.ContentType,
+                MinIOObjectName = objectName,
                 UploadedAt = DateTime.UtcNow,
                 Status = DocumentStatus.PendingOcr
             };
 
-            await _repo.AddAsync(doc);
-            _logger.LogInformation("Document {DocumentId} saved.", doc.Id);
+            await _repo.AddAsync(document);
 
-            try
-            {
-                await _messageProducer.SendMessageAsync(doc.Id.ToString());
-                _logger.LogInformation("Published OCR job {DocumentId}", doc.Id);
-            }
-            catch (QueueException ex)
-            {
-                _logger.LogError(ex, "Queue publish failed for {DocumentId}", doc.Id);
-                return StatusCode(503, "OCR queue unavailable");
-            }
+            // 3. RabbitMQ Nachricht (JSON Format passend zum Worker)
+            var message = new { DocumentId = document.Id, ObjectName = objectName };
+            var jsonMessage = System.Text.Json.JsonSerializer.Serialize(message);
 
-            return CreatedAtAction(nameof(GetById), new { id = doc.Id }, new { id = doc.Id, status = doc.Status });
+            await _messageProducer.SendMessageAsync(jsonMessage);
+
+            _logger.LogInformation("Document {Id} uploaded and queued.", document.Id);
+
+            return CreatedAtAction(nameof(GetById), new { id = document.Id }, document);
         }
     }
 }

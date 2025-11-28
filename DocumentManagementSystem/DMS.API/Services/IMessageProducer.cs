@@ -1,5 +1,9 @@
-﻿// Add this before the MessageProducer class in MessageProducer.cs
-public interface IMessageProducer
+﻿using System.Threading.Tasks;
+
+namespace DMS.API.Services
 {
-    Task SendMessageAsync(string message);
+    public interface IMessageProducer
+    {
+        Task SendMessageAsync(string message);
+    }
 }
