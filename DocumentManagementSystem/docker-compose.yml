@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   db:
-    image: postgres:latest
+    image: postgres:15
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -16,13 +16,38 @@ services:
     image: rabbitmq:3-management-alpine
     restart: always
     ports:
-      - "5672:5672"  # AMQP port
-      - "15672:15672"  # Management UI
+      - "5672:5672"
+      - "15672:15672"
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+  # Erstellt den Bucket automatisch beim Start
+  createbuckets:
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      /usr/bin/mc alias set myminio http://minio:9000 minioadmin minioadmin;
+      /usr/bin/mc mb myminio/documents;
+      /usr/bin/mc policy set public myminio/documents;
+      exit 0;
+      "
 
   api:
     build:
@@ -31,24 +56,30 @@ services:
     depends_on:
       - db
       - rabbitmq
+      - minio
     ports:
-      - "8081:80"
+      - "8081:8080"
     environment:
       - ConnectionStrings__DefaultConnection=Host=db;Database=dmsdb;Username=postgres;Password=yourpassword
-    volumes:
-      - ./DMS.API/appsettings.json:/app/appsettings.json
+      - RabbitMQ__HostName=rabbitmq
+      - MinIO__Endpoint=minio:9000
+      - MinIO__AccessKey=minioadmin
+      - MinIO__SecretKey=minioadmin
+      - MinIO__BucketName=documents
 
   ocr-worker:
     build:
       context: .
       dockerfile: DMS.OCRWorker/Dockerfile
     depends_on:
-      - db
       - rabbitmq
+      - minio
     environment:
-      - ConnectionStrings__DefaultConnection=Host=db;Database=dmsdb;Username=postgres;Password=yourpassword
-    volumes:
-      - ./DMS.OCRWorker/appsettings.json:/app/appsettings.json
+      - RabbitMQ__HostName=rabbitmq
+      - MinIO__Endpoint=minio:9000
+      - MinIO__AccessKey=minioadmin
+      - MinIO__SecretKey=minioadmin
+      - MinIO__BucketName=documents
 
   frontend:
     image: nginx:alpine
@@ -63,3 +94,4 @@ services:
 volumes:
   postgres_data:
   rabbitmq_data:
+  minio_data:
